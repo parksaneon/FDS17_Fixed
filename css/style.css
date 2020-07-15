@@ -34,8 +34,13 @@ body{
 .main{
   background-color: blue;
   padding:30px 15px;
-  overflow: hidden;
+  /* overflow: hidden; */
   min-height: 450px;
+}
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
 }
 .group{
   float: left;
@@ -54,9 +59,8 @@ body{
   background-color: coral;
   width: 190px;
 }
-
 .slogan{
-  background-color: orange;
+  background-color: green;
 }
 .footer-bg{
   background-color: purple;
