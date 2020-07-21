@@ -240,6 +240,7 @@ a{
   border-radius: 5px;
   padding:10px;
   box-shadow: 5px 5px 0px 0 #ccc;
+  width: calc(100% - 5px); 
 }
 .login-heading{
   margin:0 0 10px 0;
@@ -301,7 +302,7 @@ a{
 .member-only li:first-child{
   float:left;
 }
-.member-only li:first-child{
+.member-only li:last-child{
   float:right;
 }
 .member-only a{
@@ -314,6 +315,31 @@ a{
   display: inline-block;
   margin-right: 0.2em;
   color:#db5629;
+}
+/* 유효성 검사 배너 링크 */
+.validation-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+.validation-list li a{
+  display: block;
+  padding: 8px 10px 8px 45px;
+  /* line-height: 30px; */
+  margin-top: 10px;
+  border:1px solid #aaa;
+  border-radius: 20px;
+  background-color: #ccc;
+  background-image: url(images/validation_icon.png), linear-gradient(180deg, #ccc, #eee);
+  background-repeat: no-repeat, repeat;
+  background-position: 15px 50%, 0 0;  
+}
+.validation-list li a:hover{
+  color: #f00;
+}
+.validation-list li:first-child{
+  margin-bottom: 10px;
 }
 /* 슬로건 */
 .slogan{
