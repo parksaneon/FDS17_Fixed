@@ -150,7 +150,19 @@
           </dl>
         </section>
       </div>
-      <div class="group group2">group2</div>
+      <div class="group group2">
+        <h2 class="a11y-hidden">검색</h2>
+          <form action="http://formspree.io/mwkrwgrg" method="POST" class="search-form">
+            <fieldset>
+              <legend hidden>자료검색 영역</legend> 
+              <div role="group">    
+                <label for="search">자료검색</label>
+                <input type="search" id="search" required placeholder="검색어를 입력하세요." name="search">
+                <button type="submit" class="btn-search">검색</button>
+              </div>
+            </fieldset>
+          </form>
+      </div>
       <div class="group group3">group3</div>
     </main>
     <article class="slogan">slogan</article>

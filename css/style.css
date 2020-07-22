@@ -369,7 +369,7 @@ a{
 }
 .term-list-subject,.term-list-brief{
   float: right;
-  width:140px;
+  width:145px;
 }
 .term-list-thumbnail{
   margin-left:0;
@@ -384,6 +384,52 @@ a{
 }
 .even .term-list-thumbnail{
   float:right;
+}
+/* 검색 폼 */
+.search-form{
+  border-radius: 15px 15px 0 0;
+  border:1px solid #aaa;
+  border-bottom-width: 0;
+  padding:15px 25px 10px;
+  background:#ccc linear-gradient(180deg, #ccc, #eee);
+}
+.search-form fieldset{
+  border:0;
+  padding:0;
+  margin:0;
+}
+.search-form div[role="group"]{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-form label, .btn-search{
+  white-space: nowrap;
+}
+.search-form label::before{
+  content: '\e802';
+  font-family: 'fontello';
+  display: inline-block;
+  margin-right: 0.2em;
+}
+.search-form input[type="search"]{
+  border-radius: 3px;
+  border:1px solid #aaa;
+  padding:1px 1px 1px 5px;
+  height: 24px;
+  flex-grow: 1;
+  margin:0 5px;
+  width:200px;
+}
+.btn-search{
+  border:1px solid #aaa;
+  border-radius: 3px;
+  color:white;
+  background-color: #222;
+  font-size:1.3rem;
+  height:24px;
+  padding:0 10px;
 }
 /* 슬로건 */
 .slogan{
