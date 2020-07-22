@@ -431,6 +431,78 @@ a{
   height:24px;
   padding:0 10px;
 }
+.board{
+  position: relative;
+}
+.board section{
+  display: inline-block;
+}
+.board h2{
+  border:1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(180deg, #aaa, #fff);
+}
+.board h2 a{
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400; 
+  padding:8px 10px;
+}
+.board section:nth-child(2) h2{
+  margin-left:-3px;
+}
+.board h2.on{
+  border-color:red;
+  border-bottom-width: 0;
+  color:red;
+  background: #fff;
+}
+.board ul{
+  position: absolute;
+  display: none;
+}
+.board a[class$="plus"]{
+  position: absolute;
+  top:20px;
+  right:0;
+}
+.board section:nth-child(2) a[class$="plus"]{
+  display: none;
+}
+.board ul[class$="list"]{
+  padding: 0;
+  list-style: none;
+}
+.board ul[class$="list"] li{
+  position: relative;
+  width:380px;
+  margin: 0 0 15px 0;
+}
+.board ul[class$="list"] li:last-child{
+  margin-bottom: 0;
+}
+.board ul[class$="list"] li a{
+  display: block;
+  width:260px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board ul[class$="list"] li a::before{
+  content: '\f192';
+  font-family: 'fontello';
+  display: inline-block;
+  margin-right: 0.2em;
+}
+.board ul[class$="list"] li time{
+  position: absolute;
+  right:0;
+  top:0;
+}
+.board .notice-list{
+  display: block;
+}
+
 /* 슬로건 */
 .slogan{
   background-color: green;
