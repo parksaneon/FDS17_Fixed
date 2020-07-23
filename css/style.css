@@ -431,78 +431,86 @@ a{
   height:24px;
   padding:0 10px;
 }
+/* 공지사항 및 자료실 */
 .board{
+  background-color: yellow;
+  margin-top: 20px;
   position: relative;
+  min-height: 180px;
 }
-.board section{
-  display: inline-block;
+.notice-heading, .pds-heading{
+  background-color: pink;
+  float: left;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
-.board h2{
+.tab{
+  display: block;
+  color: #666;
   border:1px solid #aaa;
   border-radius: 5px 5px 0 0;
-  background: linear-gradient(180deg, #aaa, #fff);
+  padding: 5px 10px;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
 }
-.board h2 a{
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 400; 
-  padding:8px 10px;
-}
-.board section:nth-child(2) h2{
-  margin-left:-3px;
-}
-.board h2.on{
-  border-color:red;
-  border-bottom-width: 0;
-  color:red;
+.tab-act .tab{
+  color: #db5629;
+  border-color:#db5629 #db5629 #fff #db5629;
   background: #fff;
 }
-.board ul{
-  position: absolute;
+.notice-list, .pds-list, .notice-more, .pds-more{
   display: none;
-}
-.board a[class$="plus"]{
-  position: absolute;
-  top:20px;
-  right:0;
-}
-.board section:nth-child(2) a[class$="plus"]{
-  display: none;
-}
-.board ul[class$="list"]{
-  padding: 0;
-  list-style: none;
-}
-.board ul[class$="list"] li{
-  position: relative;
-  width:380px;
-  margin: 0 0 15px 0;
-}
-.board ul[class$="list"] li:last-child{
-  margin-bottom: 0;
-}
-.board ul[class$="list"] li a{
-  display: block;
-  width:260px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.board ul[class$="list"] li a::before{
-  content: '\f192';
-  font-family: 'fontello';
-  display: inline-block;
-  margin-right: 0.2em;
-}
-.board ul[class$="list"] li time{
-  position: absolute;
-  right:0;
-  top:0;
-}
-.board .notice-list{
-  display: block;
 }
 
+.tab-act .notice-list, .tab-act .pds-list, .tab-act .notice-more, .tab-act .pds-more{
+  display: block;
+}
+.notice-list, .pds-list{
+  background-color: silver;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width:100%;
+}
+.notice-list li, .pds-list li{
+  background-color: orange;
+  margin-bottom: 10px;
+}
+.notice-list a::before, .pds-list a::before{
+  content: "\f192";
+  font-family: 'fontello';
+  display: inline-block;
+  margin-right: .2em;
+}
+.notice-list li::after, .pds-list li::after{
+  content: "";
+  display: block;
+  clear:both;
+}
+.notice-list a, .pds-list a{
+  background-color: skyblue;
+  float: left;
+  width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.notice-list time, .pds-list time{
+  background-color: violet;
+  float: right;
+}
+.notice-more, .pds-more{
+  position: absolute;
+  top:-8px;
+  right:-8px;
+  padding: 8px;
+}
+.icon-plus::before{
+  color: hsla(110, 70%, 50%, 1);
+}
 /* 슬로건 */
 .slogan{
   background-color: green;
