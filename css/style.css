@@ -555,35 +555,17 @@ a{
   padding: 10px;
   background: #ccc linear-gradient(180deg, #ccc, #eee);
 }
-/* 신규 이벤트 */
-/* .btn-wrap{
-  background-color: yellow;
-  height: 18px;
-}
-.btn-wrap button
-{
-  background-image: url(./images/back_forward.png);
-  background-repeat: no-repeat;
-  width: 19px;
-  height: 100%;
-  border: 0;
-  overflow: hidden;
-  padding: 18px 0 0 0;
-  cursor: pointer
-}
-.btn-next{
-  background-position: -35px 0;
-} */
-.event{
-  border-bottom: 1px solid #aaa;
-  position: relative;
-}
-.event-heading{
+.event-heading, .related-heading{
   font-size: 1.6rem;
   margin: 0;
 }
-.event-heading span{
+.event-heading span, .related-heading span{
   color: #db5629;
+}
+/* 신규 이벤트 */
+.event{
+  border-bottom: 1px solid #aaa;
+  position: relative;
 }
 .event-thumbnail, .event-brief{
   margin: 10px 0;
@@ -614,6 +596,33 @@ a{
   background-position: -35px 0;
 }
 /* 관련 사이트 */
+.related{
+  margin-top: 10px;
+}
+.related-list{
+  background-color: #fff;
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0 0;
+  height:27px;
+  overflow: hidden;
+  border:1px solid #aaa;
+  border-radius: 5px;
+    
+}
+.related-list:hover{
+  height: 147px;
+  padding: 10px 0;
+  background-color: #ffc;
+}
+.related-list li{
+  padding: 2px 5px;
+}
+.related-list a{
+  display: block;
+  line-height: 21px;
+  text-indent: 1em;
+}
 /* 슬로건 */
 .slogan{
   background-color: green;
