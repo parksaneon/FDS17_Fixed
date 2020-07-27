@@ -700,7 +700,7 @@ a{
   height: 83px;
   position: absolute;
   left: 35px;
-  bottom: -15px;
+  bottom: -25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -719,17 +719,14 @@ a{
 .slogan-brief{
   color: #a09784;
   font-size: 1.3rem;
-  line-height: 1.4;
 }
 .slogan-brief q{
   font-weight: 700;
   /* quotes: "[[" "]]"; */
 }
 .slogan-brief q::before{
-  /* vertical-align: bottom; */
+  vertical-align: middle;
   font-size: 3rem;
-  position: relative;
-  top: 10px;
   margin-right: 5px;
 }
 .slogan-brief q::after{
